@@ -188,7 +188,7 @@ export const caseArticles: Record<number, CaseArticle> = {
         '/projects/print/print-01.png',
         '/projects/print/print-02.png',
         '/projects/print/print-03.png',
-        '/projects/print/print-04.png',
+        '/projects/print/print-044.png',
         '/projects/print/print-05.png',
         '/projects/print/print-06.png',
         '/projects/print/print-07.png',
