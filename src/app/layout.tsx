@@ -4,6 +4,7 @@ import './globals.css'
 import CursorTrail from '@/components/CursorTrail'
 import MobileWriteButton from '@/components/ui/MobileWriteButton'
 import SmoothScroll from '@/components/SmoothScroll'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({
   subsets: ['latin', 'cyrillic'],
