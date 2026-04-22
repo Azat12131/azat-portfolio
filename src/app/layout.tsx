@@ -29,8 +29,8 @@ export default function RootLayout({
         <CursorTrail />
         {children}
         <MobileWriteButton />
+        <Analytics />
       </body>
     </html>
   )
 }
-
