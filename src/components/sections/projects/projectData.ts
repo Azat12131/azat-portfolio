@@ -27,7 +27,7 @@ export const projects: Project[] = [
   title: 'Афиши',
   category: 'Графический дизайн / Постеры',
   year: '2026',
-  image: '/projects/poster-cover3.jpg',
+  image: '/projects/poster-cover4.png',
 },
   {
     id: 6,
@@ -42,14 +42,14 @@ export const projects: Project[] = [
     title: 'Логотипы',
     category: 'Логотипы',
     year: '2026',
-    image: '/projects/project-logo2.jpg',
+    image: '/projects/project-logo3.png',
   },
   {
     id: 2,
     title: 'Кафе Yume City',
     category: 'Айдентика / Брендинг',
     year: '2026',
-    image: '/projects/project-caty2.jpg',
+    image: '/projects/project-caty3.jpg',
   },
     {
     id: 1,
