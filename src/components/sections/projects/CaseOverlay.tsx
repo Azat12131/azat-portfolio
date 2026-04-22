@@ -122,24 +122,33 @@ export default function CaseOverlay({
                     </TypographyText>
                   )}
 
-                  {section.images && section.images.length > 0 && (
-                    <div className="mt-8 columns-1 gap-4 md:columns-2 xl:columns-3">
-                      {section.images.map((src, imageIndex) => (
-                        <div
-                          key={`${src}-${imageIndex}`}
-                          className="group relative mb-4 break-inside-avoid overflow-hidden border border-white/10 bg-[#0a0a0a]"
-                        >
-                          <img
-                            src={src}
-                            alt=""
-                            className="h-auto w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-                          />
-
-                          <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 bg-black/20" />
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  {section.images && (
+  article.layout === 'story' ? (
+    <div className="mt-8 flex flex-col gap-8">
+      {section.images.map((img, idx) => (
+        <div key={idx} className="w-full">
+          <img
+            src={img}
+            alt=""
+            className="w-full h-auto rounded-xl object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  ) : (
+    <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
+      {section.images.map((img, idx) => (
+        <div key={idx} className="w-full">
+          <img
+            src={img}
+            alt=""
+            className="w-full h-auto rounded-xl object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  )
+)}
                 </section>
               ))}
             </div>
